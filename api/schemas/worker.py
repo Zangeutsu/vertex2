@@ -4,7 +4,7 @@ from typing import List, Optional
 from pydantic import EmailStr, Field, constr
 import uuid
 
-from app.schemas.base import ORMModel
+from api.schemas.base import ORMModel
 
 
 class WorkerBase(ORMModel):
@@ -43,8 +43,8 @@ class WorkerOut(WorkerBase):
     updated_at: datetime
 
 
-from app.schemas.contract import ContractOut
-from app.schemas.compliance import ComplianceOut
+from api.schemas.contract import ContractOut
+from api.schemas.compliance import ComplianceOut
 
 
 class WorkerDetail(WorkerOut):

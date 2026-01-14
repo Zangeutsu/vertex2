@@ -2,11 +2,11 @@ from typing import List, Optional
 import uuid
 from datetime import date
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.models.shift import Shift
-from app.models.booking import Booking, BookingStatus
-from app.repositories.shift_repository import ShiftRepository
-from app.repositories.booking_repository import BookingRepository
-from app.schemas.scheduling import ShiftCreate, ShiftUpdate, BookingBase
+from api.models.shift import Shift
+from api.models.booking import Booking, BookingStatus
+from api.repositories.shift_repository import ShiftRepository
+from api.repositories.booking_repository import BookingRepository
+from api.schemas.scheduling import ShiftCreate, ShiftUpdate, BookingBase
 
 class SchedulingService:
     def __init__(self, session: AsyncSession):

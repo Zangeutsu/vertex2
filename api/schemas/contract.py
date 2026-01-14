@@ -4,8 +4,8 @@ from typing import Optional
 from pydantic import Field
 import uuid
 
-from app.models.contract import ContractStatus
-from app.schemas.base import ORMModel
+from api.models.contract import ContractStatus
+from api.schemas.base import ORMModel
 
 
 class ContractBase(ORMModel):

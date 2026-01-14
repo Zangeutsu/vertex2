@@ -1,8 +1,8 @@
-from app.schemas.dashboard import DashboardKpis, DashboardResponse
-from app.services.alert_service import AlertService
-from app.services.compliance_service import ComplianceService
-from app.repositories.contract_repository import ContractRepository
-from app.repositories.worker_repository import WorkerRepository
+from api.schemas.dashboard import DashboardKpis, DashboardResponse
+from api.services.alert_service import AlertService
+from api.services.compliance_service import ComplianceService
+from api.repositories.contract_repository import ContractRepository
+from api.repositories.worker_repository import WorkerRepository
 from sqlalchemy.ext.asyncio import AsyncSession
 
 

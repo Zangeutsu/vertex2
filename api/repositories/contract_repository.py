@@ -5,9 +5,9 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from sqlalchemy.orm import selectinload
-from app.models.contract import Contract, ContractStatus
-from app.repositories.base import BaseRepository
-from app.schemas.contract import ContractCreate, ContractUpdate
+from api.models.contract import Contract, ContractStatus
+from api.repositories.base import BaseRepository
+from api.schemas.contract import ContractCreate, ContractUpdate
 
 
 class ContractRepository(BaseRepository[Contract, ContractCreate, ContractUpdate]):

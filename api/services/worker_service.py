@@ -3,11 +3,11 @@ import uuid
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.worker import Worker
-from app.models.activity import ActivityType
-from app.services.activity_service import ActivityService
-from app.repositories.worker_repository import WorkerRepository
-from app.schemas.worker import WorkerCreate, WorkerUpdate
+from api.models.worker import Worker
+from api.models.activity import ActivityType
+from api.services.activity_service import ActivityService
+from api.repositories.worker_repository import WorkerRepository
+from api.schemas.worker import WorkerCreate, WorkerUpdate
 
 
 class WorkerService:

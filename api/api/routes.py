@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.api import workers, clients, contracts, compliance, dashboard, health, timesheets, reports, invoices, activities, scheduling
+from api.api import workers, clients, contracts, compliance, dashboard, health, timesheets, reports, invoices, activities, scheduling
 
 api_router = APIRouter()
 api_router.include_router(health.router, prefix="/health", tags=["health"])

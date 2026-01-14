@@ -3,9 +3,9 @@ from typing import List
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.schemas.dashboard import AlertItem
-from app.repositories.compliance_repository import ComplianceRepository
-from app.repositories.contract_repository import ContractRepository
+from api.schemas.dashboard import AlertItem
+from api.repositories.compliance_repository import ComplianceRepository
+from api.repositories.contract_repository import ContractRepository
 
 
 class AlertService:

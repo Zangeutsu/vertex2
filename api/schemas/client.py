@@ -3,7 +3,7 @@ import uuid
 
 from pydantic import EmailStr, Field
 
-from app.schemas.base import ORMModel
+from api.schemas.base import ORMModel
 
 
 class ClientBase(ORMModel):

@@ -1,7 +1,7 @@
 from datetime import date
 from typing import List
 
-from app.schemas.base import ORMModel
+from api.schemas.base import ORMModel
 
 
 class DashboardKpis(ORMModel):

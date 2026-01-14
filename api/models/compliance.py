@@ -6,7 +6,7 @@ from sqlalchemy import Date, DateTime, Enum as SQLEnum, ForeignKey, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import uuid
 
-from app.db.session import Base
+from api.db.session import Base
 
 
 class ComplianceType(str, Enum):

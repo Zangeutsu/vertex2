@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
 
-from app.api.deps import get_db
-from app.schemas.compliance import ComplianceCreate, ComplianceOut, ComplianceUpdate
-from app.services.compliance_service import ComplianceService
-from app.services.storage_service import StorageService
+from api.api.deps import get_db
+from api.schemas.compliance import ComplianceCreate, ComplianceOut, ComplianceUpdate
+from api.services.compliance_service import ComplianceService
+from api.services.storage_service import StorageService
 
 router = APIRouter()
 

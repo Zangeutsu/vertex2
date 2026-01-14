@@ -1,11 +1,11 @@
 from typing import Sequence
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
-from app.models.contract import Contract
-from app.models.activity import ActivityType
-from app.services.activity_service import ActivityService
-from app.repositories.contract_repository import ContractRepository
-from app.schemas.contract import ContractCreate, ContractUpdate
+from api.models.contract import Contract
+from api.models.activity import ActivityType
+from api.services.activity_service import ActivityService
+from api.repositories.contract_repository import ContractRepository
+from api.schemas.contract import ContractCreate, ContractUpdate
 
 
 class ContractService:

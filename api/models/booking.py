@@ -2,7 +2,7 @@ from enum import Enum
 from sqlalchemy import Enum as SQLEnum, ForeignKey, Integer, String, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import uuid
-from app.db.session import Base
+from api.db.session import Base
 
 class BookingStatus(str, Enum):
     pending = "pending"

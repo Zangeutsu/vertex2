@@ -4,9 +4,9 @@ import uuid
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.worker import Worker
-from app.schemas.worker import WorkerCreate, WorkerUpdate
-from app.repositories.base import BaseRepository
+from api.models.worker import Worker
+from api.schemas.worker import WorkerCreate, WorkerUpdate
+from api.repositories.base import BaseRepository
 
 
 from sqlalchemy.orm import selectinload

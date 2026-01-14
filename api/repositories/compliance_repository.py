@@ -5,9 +5,9 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from sqlalchemy.orm import selectinload
-from app.models.compliance import ComplianceRecord, ComplianceStatus
-from app.repositories.base import BaseRepository
-from app.schemas.compliance import ComplianceCreate, ComplianceUpdate
+from api.models.compliance import ComplianceRecord, ComplianceStatus
+from api.repositories.base import BaseRepository
+from api.schemas.compliance import ComplianceCreate, ComplianceUpdate
 
 
 class ComplianceRepository(BaseRepository[ComplianceRecord, ComplianceCreate, ComplianceUpdate]):

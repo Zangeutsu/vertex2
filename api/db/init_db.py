@@ -1,7 +1,7 @@
 import logging
 
-from app.db.session import Base, engine
-from app.models import Client, ComplianceRecord, Contract, Worker, Timesheet, Invoice, Activity, Shift, Booking  # noqa: F401
+from api.db.session import Base, engine
+from api.models import Client, ComplianceRecord, Contract, Worker, Timesheet, Invoice, Activity, Shift, Booking  # noqa: F401
 
 logger = logging.getLogger(__name__)
 

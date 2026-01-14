@@ -2,10 +2,10 @@ from typing import Sequence
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.compliance import ComplianceRecord
-from app.models.activity import ActivityType
-from app.repositories.compliance_repository import ComplianceRepository
-from app.schemas.compliance import ComplianceCreate, ComplianceUpdate
+from api.models.compliance import ComplianceRecord
+from api.models.activity import ActivityType
+from api.repositories.compliance_repository import ComplianceRepository
+from api.schemas.compliance import ComplianceCreate, ComplianceUpdate
 import uuid
 
 
@@ -18,7 +18,7 @@ class ComplianceService:
 
     async def create_record(self, payload: ComplianceCreate) -> ComplianceRecord:
         record = await self.repo.create(payload)
-        from app.services.activity_service import ActivityService
+        from api.services.activity_service import ActivityService
         activity_service = ActivityService(self.repo.session)
         await activity_service.log_activity(
             ActivityType.compliance_overdue if record.status == "overdue" else ActivityType.compliance_updated,
@@ -34,7 +34,7 @@ class ComplianceService:
             raise ValueError("Compliance record not found")
         updated = await self.repo.update(record, payload)
         
-        from app.services.activity_service import ActivityService
+        from api.services.activity_service import ActivityService
         activity_service = ActivityService(self.repo.session)
         await activity_service.log_activity(
             ActivityType.compliance_updated,

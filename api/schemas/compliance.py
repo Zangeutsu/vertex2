@@ -4,8 +4,8 @@ from typing import Optional
 from pydantic import Field
 import uuid
 
-from app.models.compliance import ComplianceStatus, ComplianceType
-from app.schemas.base import ORMModel
+from api.models.compliance import ComplianceStatus, ComplianceType
+from api.schemas.base import ORMModel
 
 
 class ComplianceBase(ORMModel):

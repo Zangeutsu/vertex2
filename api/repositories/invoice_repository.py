@@ -1,9 +1,9 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import Any, Optional, Union
 
-from app.models.invoice import Invoice
-from app.repositories.base import BaseRepository
-from app.schemas.invoice import InvoiceCreate, InvoiceUpdate
+from api.models.invoice import Invoice
+from api.repositories.base import BaseRepository
+from api.schemas.invoice import InvoiceCreate, InvoiceUpdate
 
 from sqlalchemy import select
 from sqlalchemy.orm import selectinload

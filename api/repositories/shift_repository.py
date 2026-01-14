@@ -2,9 +2,9 @@ from typing import List
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from sqlalchemy.orm import selectinload
-from app.repositories.base import BaseRepository
-from app.models.shift import Shift
-from app.schemas.scheduling import ShiftCreate, ShiftUpdate
+from api.repositories.base import BaseRepository
+from api.models.shift import Shift
+from api.schemas.scheduling import ShiftCreate, ShiftUpdate
 from datetime import date
 
 class ShiftRepository(BaseRepository[Shift, ShiftCreate, ShiftUpdate]):

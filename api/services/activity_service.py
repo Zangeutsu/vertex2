@@ -1,7 +1,7 @@
 from typing import Any, List, Optional, Union
 from sqlalchemy import select
-from app.models.activity import Activity, ActivityType
-from app.repositories.activity_repository import ActivityRepository
+from api.models.activity import Activity, ActivityType
+from api.repositories.activity_repository import ActivityRepository
 
 class ActivityService:
     def __init__(self, session):

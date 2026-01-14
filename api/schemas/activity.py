@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel
-from app.models.activity import ActivityType
-from app.schemas.base import ORMModel
+from api.models.activity import ActivityType
+from api.schemas.base import ORMModel
 
 class ActivityOut(ORMModel):
     id: int

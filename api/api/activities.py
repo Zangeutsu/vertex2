@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.db.session import get_session
-from app.services.activity_service import ActivityService
-from app.schemas.activity import ActivityOut
+from api.db.session import get_session
+from api.services.activity_service import ActivityService
+from api.schemas.activity import ActivityOut
 
 router = APIRouter()
 

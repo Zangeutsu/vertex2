@@ -4,13 +4,13 @@ from typing import List, Optional
 from sqlalchemy import select, and_
 from sqlalchemy.orm import selectinload
 
-from app.models.invoice import Invoice, InvoiceStatus
-from app.models.timesheet import Timesheet
-from app.models.contract import Contract
-from app.repositories.invoice_repository import InvoiceRepository
-from app.schemas.invoice import InvoiceCreate
-from app.models.activity import ActivityType
-from app.services.activity_service import ActivityService
+from api.models.invoice import Invoice, InvoiceStatus
+from api.models.timesheet import Timesheet
+from api.models.contract import Contract
+from api.repositories.invoice_repository import InvoiceRepository
+from api.schemas.invoice import InvoiceCreate
+from api.models.activity import ActivityType
+from api.services.activity_service import ActivityService
 
 class InvoiceService:
     def __init__(self, session):

@@ -5,7 +5,7 @@ from sqlalchemy import DateTime, String, func, Text, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import uuid
 
-from app.db.session import Base
+from api.db.session import Base
 
 if TYPE_CHECKING:
     from .contract import Contract

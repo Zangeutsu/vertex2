@@ -3,9 +3,9 @@ import io
 from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.api.deps import get_db
-from app.services.worker_service import WorkerService
-from app.services.contract_service import ContractService
+from api.api.deps import get_db
+from api.services.worker_service import WorkerService
+from api.services.contract_service import ContractService
 
 router = APIRouter()
 

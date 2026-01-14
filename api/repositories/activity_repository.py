@@ -1,6 +1,6 @@
-from app.models.activity import Activity
-from app.repositories.base import BaseRepository
-from app.schemas.base import ORMModel
+from api.models.activity import Activity
+from api.repositories.base import BaseRepository
+from api.schemas.base import ORMModel
 from pydantic import BaseModel
 
 # Dummy schemas for BaseRepository requirement

@@ -1,8 +1,8 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.client import Client
-from app.repositories.base import BaseRepository
-from app.schemas.client import ClientCreate, ClientUpdate
+from api.models.client import Client
+from api.repositories.base import BaseRepository
+from api.schemas.client import ClientCreate, ClientUpdate
 
 
 class ClientRepository(BaseRepository[Client, ClientCreate, ClientUpdate]):

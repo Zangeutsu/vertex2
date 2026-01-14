@@ -1,6 +1,6 @@
-from app.repositories.base import BaseRepository
-from app.models.booking import Booking
-from app.schemas.scheduling import BookingBase
+from api.repositories.base import BaseRepository
+from api.models.booking import Booking
+from api.schemas.scheduling import BookingBase
 from sqlalchemy.ext.asyncio import AsyncSession
 
 class BookingRepository(BaseRepository[Booking, BookingBase, BookingBase]):

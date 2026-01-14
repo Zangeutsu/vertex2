@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
 
-from app.api.deps import get_db
-from app.schemas.contract import ContractCreate, ContractOut, ContractUpdate
-from app.services.contract_service import ContractService
-from app.services.storage_service import StorageService
+from api.api.deps import get_db
+from api.schemas.contract import ContractCreate, ContractOut, ContractUpdate
+from api.services.contract_service import ContractService
+from api.services.storage_service import StorageService
 
 router = APIRouter()
 

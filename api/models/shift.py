@@ -1,7 +1,7 @@
 from datetime import date, time
 from sqlalchemy import Date, ForeignKey, Integer, String, Time, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.db.session import Base
+from api.db.session import Base
 import uuid
 
 class Shift(Base):

@@ -3,9 +3,9 @@ import uuid
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.client import Client
-from app.repositories.client_repository import ClientRepository
-from app.schemas.client import ClientCreate, ClientUpdate
+from api.models.client import Client
+from api.repositories.client_repository import ClientRepository
+from api.schemas.client import ClientCreate, ClientUpdate
 
 
 class ClientService:

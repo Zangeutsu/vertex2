@@ -1,9 +1,9 @@
 from typing import Sequence
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
-from app.models.timesheet import Timesheet
-from app.repositories.timesheet_repository import TimesheetRepository
-from app.schemas.timesheet import TimesheetCreate, TimesheetUpdate
+from api.models.timesheet import Timesheet
+from api.repositories.timesheet_repository import TimesheetRepository
+from api.schemas.timesheet import TimesheetCreate, TimesheetUpdate
 
 class TimesheetService:
     def __init__(self, session: AsyncSession):

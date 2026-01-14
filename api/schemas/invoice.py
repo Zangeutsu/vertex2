@@ -4,8 +4,8 @@ from typing import List, Optional
 from pydantic import Field
 import uuid
 
-from app.models.invoice import InvoiceStatus
-from app.schemas.base import ORMModel
+from api.models.invoice import InvoiceStatus
+from api.schemas.base import ORMModel
 
 class InvoiceBase(ORMModel):
     client_id: uuid.UUID
@@ -24,7 +24,7 @@ class InvoiceUpdate(ORMModel):
     notes: Optional[str] = None
     due_date: Optional[date] = None
 
-from app.schemas.timesheet import TimesheetOut
+from api.schemas.timesheet import TimesheetOut
 
 class InvoiceOut(InvoiceBase):
     id: uuid.UUID

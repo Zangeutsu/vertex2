@@ -3,9 +3,9 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
-from app.db.session import get_session
-from app.schemas.scheduling import ShiftCreate, ShiftUpdate, ShiftOut, BookingBase, BookingOut
-from app.services.scheduling_service import SchedulingService
+from api.db.session import get_session
+from api.schemas.scheduling import ShiftCreate, ShiftUpdate, ShiftOut, BookingBase, BookingOut
+from api.services.scheduling_service import SchedulingService
 
 router = APIRouter()
 

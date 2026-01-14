@@ -2,7 +2,7 @@ from datetime import date, time
 from typing import List, Optional
 from pydantic import Field
 import uuid
-from app.schemas.base import ORMModel
+from api.schemas.base import ORMModel
 
 class ShiftBase(ORMModel):
     client_id: uuid.UUID
