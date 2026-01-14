@@ -4,10 +4,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.api.routes import api_router
-from app.core.config import get_settings
-from app.core.logging import configure_logging
-from app.db.init_db import init_db
+from api.api.routes import api_router
+from api.core.config import get_settings
+from api.core.logging import configure_logging
+from api.db.init_db import init_db
 
 
 configure_logging()
