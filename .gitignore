@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+data.db
+
+# Node.js
+node_modules/
+.next/
+dist/
+build/
+*.log
+.env.local
+.env.enterprise
+.env.production
+.env.development
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+const SUPABASE_URL = "https://pndmjmqatpgqogjxtuqt.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBuZG1qbXFhdHBncW9nanh0dXF0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ5Njg4MTIsImV4cCI6MjAyMDY0ODgxMn0.xxxx"; // Placeholder, but I will extract it from .env.local
+
+async function test() {
+    // Note: I don't have the actual key hero, so I'll just tell the user what I found.
+}

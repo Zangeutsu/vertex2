@@ -1,0 +1,5 @@
+export const ALGARVE_CITIES = [
+    "Albufeira", "Alcoutim", "Aljezur", "Castro Marim", "Faro", "Lagoa",
+    "Lagos", "Loulé", "Monchique", "Olhão", "Portimão", "São Brás de Alportel",
+    "Silves", "Tavira", "Vila do Bispo", "Vila Real de Santo António"
+].sort();
