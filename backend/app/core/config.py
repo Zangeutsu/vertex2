@@ -21,7 +21,15 @@ class Settings(BaseSettings):
     @classmethod
     def split_origins(cls, v: Any) -> Any:
         if isinstance(v, str):
-            return [i.strip() for i in v.split(",") if i.strip()]
+            # Check if it looks like a JSON list
+            if v.startswith("[") and v.endswith("]"):
+                import json
+                try:
+                    return json.loads(v)
+                except:
+                    # Strip brackets and continue to normal split
+                    v = v[1:-1]
+            return [i.strip().strip('"').strip("'") for i in v.split(",") if i.strip()]
         return v
 
 
